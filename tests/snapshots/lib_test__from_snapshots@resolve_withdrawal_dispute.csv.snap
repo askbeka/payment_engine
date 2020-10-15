@@ -1,0 +1,7 @@
+---
+source: tests/lib_test.rs
+expression: "String::from(csv) + \"\\n\" + &lines.sorted().join(\"\\n\")"
+input_file: tests/csv_inputs/resolve_withdrawal_dispute.csv
+---
+client,available,held,total,locked
+1,0.5,0.0000,0.5,false
